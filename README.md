@@ -1,5 +1,5 @@
 # java-script-project
 
-##Tetris-Game
+# Tetris-Game
 
 Neomi and Gili
