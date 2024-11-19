@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'digital';
+    src: url(./fonts/digital-7.monoitalic.ttf) format('truetype');     
+    font-weight: normal; 
+    font-style: normal;
+}
+body {
+  background-image: url(./תמונות/Default_A_futuristic_neonlit_cyberpunk_cityscape_serves_as_the_3\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+  height: 100vh; /* 100vh = 100% מגובה viewport */
+  overflow: hidden; /* מסתיר את סרגל הגלילה */
+  background-size: contain; /* מכילה את התמונה בתוך האזור */
+}
+#baseCanvas {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-27%);
+  margin: 7px;
+  z-index: 2;
+}
+
+#score {
+  margin: 20px;
+  color: #83efb4;
+  font-size: 40px;
+  font-family: 'digital';
+
+}
+#highScore {
+  margin: 20px;
+  color: rgb(229, 140, 214);
+  font-size: larger;
+  font-family: 'digital';
+
+}
+
+audio {
+  position: absolute; /* מקם את הנגן במיקום מוחלט */
+  top: 10px; /* ממקם את הנגן 10 פיקסלים מהחלק העליון של הדף */
+  right: 10px; /* ממקם את הנגן 10 פיקסלים מהחלק הימני של הדף */
+  width: 300px; /* קובע את רוחב הנגן */
+  height: 30px; /* קובע את גובה הנגן */
+}
+
+#pOver {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-family: 'digital';
+  color: antiquewhite;
+  display: none;
+}
+#newGame {
+    background: linear-gradient(to bottom right, #474948, #dfe8e3);
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-family: 'digital';
+  font-size: 15px;
+  text-align: center;
+  animation: pulsate 1s infinite;
+  border: 2px solid #757e82;
+  display: none;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    background-color: rgb(243, 160, 221);
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(175, 220, 235);
+  }
+}
+#faster {
+  background:  linear-gradient(to bottom right, #474948, #a1e9c5);
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-family: 'digital';
+  font-size: 15px;
+  text-align: center;
+  animation: pulsate 1s infinite;
+  border: 2px solid #bac9cf;
+  display: block;
+  position: absolute;
+  margin: 30px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <style>
+      @font-face {
+        font-family: "digital";
+        src: url(./fonts/digital-7.monoitalic.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        background-image: url(./תמונות/imageHome.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgb(8, 6, 15);
+        height: 100vh;
+        overflow: hidden;
+        background-size: contain;
+        font-family: "Courier New", Courier, monospace;
+      }
+      button {
+        background: linear-gradient(to bottom right, #2ecc71, #27ae60);
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "digital";
+        font-size: 25px;
+        text-align: center;
+        animation: pulsate 1s infinite;
+        border: 2px solid #9fa8ab; /* גבול עבה בצבע כחול */
+        top: 80%;
+      }
+      .start-button {
+        background-color: #2ecc71; /* ירוק בהיר */
+      }
+
+      .start-button:hover {
+        background-color: #27ae60;
+      }
+      @keyframes pulsate {
+        0% {
+          transform: scale(1);
+          background-color: rgb(243, 160, 221);
+        }
+        50% {
+          transform: scale(1.2);
+          background-color: rgb(175, 220, 235);
+        }
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 85%;
+      }
+
+      .black-section {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        right: 2px;
+        top: 50px;
+      }
+
+      #right-aligned-text {
+        color: rgb(229, 140, 214);
+        padding: 10px;
+        font-size: larger;
+        font-family: "digital";
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./tetrisScript.js"></script>
+    <div class="button-container">
+      <button
+        onclick="window.location.href='tetrisGame.html';"
+        class="start-button"
+      >
+        start
+      </button>
+    </div>
+    <div class="black-section">
+      <h1 id="right-aligned-text">Game Instructions:</h1>
+      <p id="right-aligned-text">
+        The game board: The board consists of rows and columns. Different shapes fall from above all the time.<br>
+        The shapes: The shapes come in a variety of different geometric shapes, such as squares, rectangles, triangles, etc.
+        <br>Move and rotate: You can move the falling shape to the side and rotate it, to find its ideal position on the board.
+        <br >rows: When a full row is created, it disappears from the board and all rows above it are moved down.
+        <br>Lose: The game ends when the shapes reach the top edge of the board and you fail to form rows<br>
+        good luck😀
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teteris</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p id="highScore">High score: 0</p>
+    <div id="divScore">
+      <h2 id="score">score</h2>
+    </div>
+    <canvas id="baseCanvas" width="800px" height="800px"></canvas>
+    <script src="./drawingmanager.js"></script>
+    <script src="./shapemanager.js"></script>
+    <script src="./tetrisScript.js"></script>
+    <!-- <p id="pOver">game over</p> -->
+    <button id="newGame" onclick="window.location.href='tetrisGame.html'">
+      new game
+    </button>
+    <button id="faster" type="button" onclick="fasterFunction()">faster</button>
+    <div style="display: none">
+      <audio id="audioTetris">
+        <source src="./מוזיקה/dreams.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audioTetrisOver">
+        <source src="./מוזיקה/3צפירת רכב.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="audioTetrisPlus">
+        <source src="./מוזיקה/הוספת ניקוד.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </body>
+</html>
