@@ -30,8 +30,7 @@ This project implements the traditional Tetris game logic including:
 
 ## 🚀 Live Demo
 
-You can try the game here: [🌐 GitHub Pages Deployment](#)  
-> *(Replace with your actual GitHub Pages link if you have one)*
+You can try the game here: [🌐(https://6739852.github.io/java-script-project/)](#)  
 
 ---
 
