@@ -28,5 +28,28 @@ This project implements the traditional Tetris game logic including:
 
 ---
 
-## 📁 Project Structure
+## 🚀 Live Demo
+
+You can try the game here: [🌐 GitHub Pages Deployment](#)  
+> *(Replace with your actual GitHub Pages link if you have one)*
+
+---
+
+## 🧠 What We Learned
+
+- Working with HTML5 Canvas for game rendering
+- Algorithm design for collision and line-clearing logic
+- Modularizing JavaScript code
+- Building interactive applications with real-time logic
+
+---
+
+## 📬 Feedback
+
+Have suggestions or feedback? Feel free to open an issue or fork the project!
+
+---
+
+> Built with ❤️ and a lot of JavaScript!
+
 
